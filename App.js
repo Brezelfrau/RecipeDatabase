@@ -1,21 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import "react-native-gesture-handler";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight,
+  Image,
+  SafeAreaView,
+  Button,
+} from "react-native";
+import { AppRegistry } from "react-native";
+import { Provider as PaperProvider } from "react-native-paper";
+import { name as appName } from "./app.json";
+import "react-native-gesture-handler";
+import { NavigationContainer } from "@react-navigation/native";
+import MyNavigator from "./app/AppNavigator";
 
-export default function App() {
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
   );
+};
+
+// export default function Main() {
+//   return (
+//     <PaperProvider>
+//       <SafeAreaView>
+//         <WelcomeScreen />
+//       </SafeAreaView>
+//     </PaperProvider>
+//   );
+// }
+
+export default function Main() {
+  return <MyNavigator />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+AppRegistry.registerComponent(appName, () => Main);
