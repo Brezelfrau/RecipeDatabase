@@ -11,21 +11,19 @@ import {
   Paragraph,
 } from "react-native-paper";
 
-const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
-
 const Stack = createStackNavigator();
 
 const RecipeDetailScreen = ({ navigation, route }) => (
   <Card>
-    <Card.Title left={LeftContent} />
+    <Card.Title title={route.params.recipeName} />
+    <Card.Cover source={{ uri: route.params.thumbnail }} />
     <Card.Content>
-      <Title>{route.params.recipeName}</Title>
+      <Title>Ingredients</Title>
+      <Paragraph>
+        {route.params.recipeName} in {route.params.duration} min
+      </Paragraph>
+      <Title>Steps</Title>
     </Card.Content>
-    <Card.Cover source={{ uri: "https://picsum.photos/700" }} />
-
-    <Text>
-      {route.params.recipeName} in {route.params.duration} min
-    </Text>
   </Card>
 );
 
