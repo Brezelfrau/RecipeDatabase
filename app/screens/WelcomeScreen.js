@@ -19,6 +19,20 @@ const data = [
     thumbnail: "https://picsum.photos/id/102/200/300",
     duration: 100,
   },
+  {
+    recipeName: "Over Night Oats",
+    thumbnail: "https://picsum.photos/id/312/200/300",
+    duration: 10,
+    ingredients: [
+      "100g Frucht",
+      "20g Nüsse",
+      "50g Haferflocken",
+      "20g Rosinen",
+      "200ml Pflanzendrink",
+      "1 Prise Salz",
+      "1/2 TL Zimt",
+    ],
+  },
 ];
 
 const WelcomeScreen = ({ navigation }) => (
