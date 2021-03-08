@@ -20,7 +20,7 @@ const data = [
     duration: 100,
   },
   {
-    recipeName: "Over Night Oats",
+    recipeName: "Bircher Müsli",
     thumbnail: "https://picsum.photos/id/312/200/300",
     duration: 10,
     ingredients: [
@@ -31,6 +31,12 @@ const data = [
       "200ml Pflanzendrink",
       "1 Prise Salz",
       "1/2 TL Zimt",
+    ],
+    steps: [
+      "1. Frucht in kleine Stückchen schneiden. Nüsse grob hacken.",
+      "2. Beides in eine Schale geben. Mit Haferflocken, Rosinen und dem Pflanzendrink mischen.",
+      "3. Salz und Zimt hinzugeben.",
+      "4. Für mind. 3h in den Kühlschrank (besser über Nacht).",
     ],
   },
 ];

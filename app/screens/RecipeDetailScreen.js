@@ -10,6 +10,7 @@ import {
   Title,
   Paragraph,
 } from "react-native-paper";
+import { StyleSheet, View } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -19,19 +20,35 @@ const RecipeDetailScreen = ({ navigation, route }) => (
     <Card.Cover source={{ uri: route.params.thumbnail }} />
     <Card.Content>
       <Paragraph>Zeit: {route.params.duration} min</Paragraph>
-      <Title>Ingredients</Title>
-      <Paragraph>
+
+      <Title>Zutaten</Title>
+      <View style={styles.container}>
         {route.params.ingredients.map((ingredient) => (
-          <Text style={{ flex: 1, paddingLeft: 5 }}>
+          <Text style={styles.element}>
             {"\u2219"}
             {ingredient}
             {"\n"}
           </Text>
         ))}
-      </Paragraph>
-      <Title>Steps</Title>
+      </View>
+      <Title>Zubereitung</Title>
+      <View>
+        {route.params.steps.map((step) => (
+          <Text>{step}</Text>
+        ))}
+      </View>
     </Card.Content>
   </Card>
 );
+
+const styles = StyleSheet.create({
+  element: {
+    marginTop: -10,
+    paddingTop: 10,
+  },
+  container: {
+    marginTop: 20,
+  },
+});
 
 export default RecipeDetailScreen;
