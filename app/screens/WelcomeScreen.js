@@ -6,8 +6,8 @@ import { data } from "../RecipeData";
 
 const WelcomeScreen = ({ navigation }) => (
   <ScrollView>
-    {data.map((recipe) => (
-      <Card>
+    {data.map((recipe, index) => (
+      <Card key={index}>
         <Card.Title title={recipe.recipeName} />
         <Card.Cover source={{ uri: recipe.thumbnail }} />
         <Card.Actions>

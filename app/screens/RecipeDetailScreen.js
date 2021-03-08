@@ -11,34 +11,40 @@ import {
   Paragraph,
 } from "react-native-paper";
 import { StyleSheet, View } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 
 const Stack = createStackNavigator();
 
 const RecipeDetailScreen = ({ navigation, route }) => (
-  <Card>
-    <Card.Title title={route.params.recipeName} />
-    <Card.Cover source={{ uri: route.params.thumbnail }} />
-    <Card.Content>
-      <Paragraph>Zeit: {route.params.duration} min</Paragraph>
+  <ScrollView>
+    <Card>
+      <Card.Title title={route.params.recipeName} />
+      <Card.Cover source={{ uri: route.params.thumbnail }} />
+      <Card.Content>
+        <Paragraph>Dauer: {route.params.duration} min</Paragraph>
 
-      <Title>Zutaten</Title>
-      <View style={styles.container}>
-        {route.params.ingredients.map((ingredient) => (
-          <Text style={styles.element}>
-            {"\u2219"}
-            {ingredient}
-            {"\n"}
-          </Text>
-        ))}
-      </View>
-      <Title>Zubereitung</Title>
-      <View>
-        {route.params.steps.map((step) => (
-          <Text>{step}</Text>
-        ))}
-      </View>
-    </Card.Content>
-  </Card>
+        <Title>Zutaten</Title>
+        <View style={styles.container}>
+          {
+            //index is needed for avoiding 'key list' error message
+          }
+          {route.params.ingredients.map((ingredient, index) => (
+            <Text key={index} style={styles.element}>
+              {"\u2219"}
+              {ingredient}
+              {"\n"}
+            </Text>
+          ))}
+        </View>
+        <Title>Zubereitung</Title>
+        <View>
+          {route.params.steps.map((step, index) => (
+            <Text key={index}>{step}</Text>
+          ))}
+        </View>
+      </Card.Content>
+    </Card>
+  </ScrollView>
 );
 
 const styles = StyleSheet.create({
