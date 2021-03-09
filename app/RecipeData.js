@@ -1,7 +1,8 @@
 export const data = [
   {
     recipeName: "Belugalinsen Curry",
-    thumbnail: "https://picsum.photos/id/292/200/300",
+    thumbnail:
+      "https://biancazapatka.com/wp-content/uploads/2020/01/beluga-linsen-curry-veganes-dal-720x1008.jpg.webp",
     duration: 10,
     ingredients: [
       "300g Belugalinsen",
@@ -51,7 +52,8 @@ export const data = [
   },
   {
     recipeName: "Linsen-Lasagne",
-    thumbnail: "https://picsum.photos/id/425/200/300",
+    thumbnail:
+      "https://biancazapatka.com/wp-content/uploads/2019/07/vegan-lasagna-best-recipe-zucchini-lentils-tomato-cashew-cheese-sauce-easy-720x1080.jpg",
     duration: 30,
     ingredients: [
       "1 Tasse rote Linsen",
@@ -78,7 +80,8 @@ export const data = [
   },
   {
     recipeName: "Bircher Müsli",
-    thumbnail: "https://picsum.photos/id/493/200/300",
+    thumbnail:
+      "https://www.weightwatchers.de/images/1031/dynamic/foodandrecipes/2014/08/Birchermuesli_xl.jpg",
     duration: 10,
     ingredients: [
       "100g Frucht",
