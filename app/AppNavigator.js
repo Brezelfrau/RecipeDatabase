@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import RecipeDetailScreen from "./screens/RecipeDetailScreen";
 import { Button, Text } from "react-native";
+import AddRecipeScreen from "./screens/AddRecipeScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,11 @@ const MyNavigator = () => {
           name="RecipeDetailScreen"
           component={RecipeDetailScreen}
           options={{ title: "Details" }}
+        />
+        <Stack.Screen
+          name="AddRecipeScreen"
+          component={AddRecipeScreen}
+          options={{ title: "Neues Rezept" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
