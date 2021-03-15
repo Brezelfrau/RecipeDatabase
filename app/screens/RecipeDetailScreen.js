@@ -37,9 +37,11 @@ const RecipeDetailScreen = ({ navigation, route }) => (
           ))}
         </View>
         <Title>Zubereitung</Title>
-        <View>
+        <View style={styles.container}>
           {route.params.steps.map((step, index) => (
-            <Text key={index}>{step}</Text>
+            <Text key={index} style={styles.stepsStyles}>
+              {step}
+            </Text>
           ))}
         </View>
       </Card.Content>
@@ -54,6 +56,9 @@ const styles = StyleSheet.create({
   },
   container: {
     marginTop: 20,
+  },
+  stepsStyles: {
+    lineHeight: 25,
   },
 });
 
