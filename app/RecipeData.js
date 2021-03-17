@@ -12,7 +12,7 @@ export const data = [
       "1 TL Ingwer",
       "2 Karotten",
       "1 1/2 EL Currypaste/Currypulver od. Gewürzmischung",
-      "400ml passierte Tomaten",
+      "400 ml passierte Tomaten",
       "1 Dose Kokosmilch",
       "560 ml Gemüsebrühe",
       "1 Süßkartoffel",
