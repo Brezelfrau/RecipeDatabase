@@ -4,7 +4,7 @@ import { Text } from "react-native-paper";
 
 const AddRecipeScreen = ({ navigation }) => (
   <ScrollView>
-    <Text>hello</Text>
+    <Text>hello TEST</Text>
   </ScrollView>
 );
 

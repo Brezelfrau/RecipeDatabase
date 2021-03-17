@@ -6,6 +6,7 @@ export const data = [
     duration: 10,
     ingredients: [
       "300g Belugalinsen",
+      "1 Block Tofu",
       "1 Zwiebel",
       "2 Zehen Knoblauch",
       "1 TL Ingwer",
@@ -25,6 +26,7 @@ export const data = [
       "2. Currypaste und Belugalinsen hinzufügen und 1 min anschwitzen. Passierte Tomaten, Kokosmilch, 1 Tasse Gemüsebrühe hinzu und 20-25 min köcheln lassen (währenddessen restliche Brühe nach und nach zugeben).",
       "3. Süßkartoffel hinzugeben und weitere 15 min köcheln lassen bzw. bis Süßkartoffel weich und das Curry cremig ist. Mit Salz, Pfeffer, Zitronen-/Limettensaft abschmecken.",
       "4. Spinat hinzugeben und 1 min garen, bis dieser zusammengefallen ist. Dazu Reis oder Joghurt servieren. Mit Sesam, Koriander und Petersilie garnieren.",
+      "5. Tofu scharf in etwas Tamarisoße/Sojasoße anbraten und über das fertige Essen verteilen.",
       "5. Gewürzmischung: Anstelle von Currypaste/Currypulver: 2 TL Garam Masala + 1-2 TL Kreuzkümmel + 1 TL Koriander",
     ],
   },
@@ -97,6 +99,31 @@ export const data = [
       "2. Beides in eine Schale geben. Mit Haferflocken, Rosinen und dem Pflanzendrink mischen.",
       "3. Salz und Zimt hinzugeben.",
       "4. Für mind. 3h in den Kühlschrank (besser über Nacht).",
+    ],
+  },
+  {
+    recipeName: "Ofengemüse mit Blattsalat",
+    thumbnail:
+      "https://loeffelgenuss.de/wp-content/uploads/2016/12/SalatOfengem%C3%BCse2.jpg",
+    duration: 20,
+    ingredients: [
+      "Kartoffeln",
+      "Zucchini/ Möhre/ Paprika",
+      "1 große Zwiebel",
+      "Blattsalat (Feldsalat/ Rucola)",
+      "eingelegte Gurken",
+      "Tomaten",
+      "Creme vega (altern.: Creme fraiche, Joghurt)",
+      "Feta",
+      "1/2 Zitrone",
+      "Gewürze (Salz, Pfeffer, Paprika, Chili, Curry, Kräuter de Provence)",
+    ],
+    steps: [
+      "1. Kartoffeln, Zwiebel und anderes Ofengemüse klein schneiden und auf einem Backblech verteilen. Olivenöl und diverse Gewürze darüber verteilen. Bei 180-200 Grad in den Ofen bis alles gar ist.",
+      "2. Eingelegte Gurken und Tomaten klein schneiden. Blattsalat waschen.",
+      "3. Creme vega mit etwas Senf, Salz und Pfeffer anrühren. Den Feta zerbröseln.",
+      "4. Blattsalat auf Tellern oder in Schalen verteilen, das fertige Ofengemüse, Gurken und Tomaten darauf anrichten.",
+      "5. Zitronensaft, Creme vega und Feta darauf verteilen.",
     ],
   },
 ];
