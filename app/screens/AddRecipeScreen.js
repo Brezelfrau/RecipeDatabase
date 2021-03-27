@@ -1,39 +1,51 @@
 import * as React from "react";
 import { StyleSheet, TextInput } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
+import { Button } from "react-native";
 
 const AddRecipeScreen = ({ navigation }) => {
-  const [text, onChangeText] = React.useState("Useless Text");
-  const [number, onChangeNumber] = React.useState(null);
+  const [title, onChangeTitle] = React.useState();
+  const [duration, onChangeDuration] = React.useState(null);
+  const [ingredients, onChangeIngredients] = React.useState();
+  const [steps, onChangeSteps] = React.useState();
 
   return (
     <ScrollView>
       <TextInput
         style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
+        onChangeText={onChangeTitle}
+        value={title}
+        placeholder="Titel"
       />
       <TextInput
         style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
+        onChangeText={onChangeDuration}
+        value={duration}
         placeholder="Dauer"
         keyboardType="numeric"
       />
       <TextInput
         style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
+        onChangeText={onChangeIngredients}
+        value={ingredients}
         placeholder="Zutaten"
-        keyboardType="numeric"
       />
+      <Button
+        title="Zutat hinzufügen"
+        color="#0aada4"
+        style={styles.addButton}
+      ></Button>
       <TextInput
         style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
+        onChangeText={onChangeSteps}
+        value={steps}
         placeholder="Schritte"
-        keyboardType="numeric"
       />
+      <Button
+        title="Schritt hinzufügen"
+        color="#0aada4"
+        style={styles.addButton}
+      ></Button>
     </ScrollView>
   );
 };
@@ -44,6 +56,7 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
   },
+  addButton: {},
 });
 
 export default AddRecipeScreen;
