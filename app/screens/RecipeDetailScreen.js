@@ -25,7 +25,7 @@ const RecipeDetailScreen = ({ navigation, route }) => (
         <Title>Zutaten</Title>
         <View style={styles.container}>
           {
-            //index is needed for avoiding 'key list' error message
+            //key index is needed for avoiding 'key list' error message
           }
           {route.params.ingredients.map((ingredient, index) => (
             <Text key={index} style={styles.element}>
